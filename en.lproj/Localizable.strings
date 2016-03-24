@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  SnapAround
+
+  Created by Valentin Comte on 14/05/2015.
+  Copyright (c) 2015 Mehdi Kitane. All rights reserved.
+*/
+
+// In Placeholder //
+NO_PHOTO_COLLECTION="\n\nThere is no photo in your collection.\nAdd some by clicking on  ";
+NO_PHOTO_AROUND="\n\nThere is no picture around you.\nTry to move around to discover new pictures.";
+
+// In LoginViewController //
+OOPS="Oops";
+AUTHENTICATION_FAILURE="There was a problem during your authentication. Please try again";
+
+// In MapViewController //
+UNAUTHORIZED_LOCALIZATION="You must authorize localization to use this application";
+
+// In SettingViewController //
+SHARE_FRIENDS="Share";
+SHARE_MESSAGE="Spread the word to your friends";
+LOGOUT="Logout";
+LOGOUT_MESSAGE="Goodbye, we'll miss you";
+DISCOVER="Discover what’s happening around you";
+TERMS = "Terms of Service";
+TERMS_MESSAGE = "Terms of Service of SnapAround";
+
+// In ShareTableViewController //;
+SHARE_WITH="Share with";
+SHARE_FRIENDS_FAILURE = "You should select at least one friend or post this image as public";
+
+// In LegendTableViewCell //
+WRITE_MESSAGE="Write a message";
+
+// In CollectionTableViewController //
+MY_COLLECTION="My collection";
+PHOTOS_AROUND="Photos around you";
+POST_ADDED_COLLECTION="Post added to collection";
+
+// In Collection TableViewCell
+REPORT_POST = "Report this post";
+CANCEL = "Cancel";
+
+// In RelativeTime.m //
+NOW="now";
+ONE_MINUTE_AGO="1 minute ago";
+X_MINUTES_AGO="%llu minutes ago";
+ONE_HOUR_AGO="1 hour ago";
+X_HOURS_AGO="%i hours ago";
+ONE_DAY_AGO="yesterday";
+X_DAYS_AGO="%i days ago";
+ONE_MONTH_AGO="1 month ago";
+X_MONTH_AGO="%i months ago";
+ONE_YEAR_AGO="1 year ago";
+X_YEARS_AGO="%i years ago";

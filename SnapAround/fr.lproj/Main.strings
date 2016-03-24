@@ -1,0 +1,57 @@
+
+/* Class = "UINavigationItem"; title = "Share"; ObjectID = "0Wk-fg-fDB"; */
+"0Wk-fg-fDB.title" = "Partager";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "3Yb-TF-1mf"; */
+"3Yb-TF-1mf.text" = "Paramètres";
+
+/* Class = "UILabel"; text = "My collection"; ObjectID = "7sm-c1-i2o"; */
+"7sm-c1-i2o.text" = "Ma collection";
+
+/* Class = "UILabel"; text = "Author"; ObjectID = "ESx-xN-RjW"; */
+"ESx-xN-RjW.text" = "Auteur";
+
+/* Class = "UISegmentedControl"; GQJ-bj-R7B.segmentTitles[0] = "1h"; ObjectID = "GQJ-bj-R7B"; */
+"GQJ-bj-R7B.segmentTitles[0]" = "1h";
+
+/* Class = "UISegmentedControl"; GQJ-bj-R7B.segmentTitles[1] = "2h"; ObjectID = "GQJ-bj-R7B"; */
+"GQJ-bj-R7B.segmentTitles[1]" = "2h";
+
+/* Class = "UISegmentedControl"; GQJ-bj-R7B.segmentTitles[2] = "4h"; ObjectID = "GQJ-bj-R7B"; */
+"GQJ-bj-R7B.segmentTitles[2]" = "4h";
+
+/* Class = "UISegmentedControl"; GQJ-bj-R7B.segmentTitles[3] = "12h"; ObjectID = "GQJ-bj-R7B"; */
+"GQJ-bj-R7B.segmentTitles[3]" = "12h";
+
+/* Class = "UISegmentedControl"; GQJ-bj-R7B.segmentTitles[4] = "1d"; ObjectID = "GQJ-bj-R7B"; */
+"GQJ-bj-R7B.segmentTitles[4]" = "1j";
+
+/* Class = "UISegmentedControl"; GQJ-bj-R7B.segmentTitles[5] = "2d"; ObjectID = "GQJ-bj-R7B"; */
+"GQJ-bj-R7B.segmentTitles[5]" = "2j";
+
+/* Class = "UISegmentedControl"; GQJ-bj-R7B.segmentTitles[6] = "1y"; ObjectID = "GQJ-bj-R7B"; */
+"GQJ-bj-R7B.segmentTitles[6]" = "1 an";
+
+/* Class = "UILabel"; text = "Public"; ObjectID = "HB9-HM-owr"; */
+"HB9-HM-owr.text" = "Public";
+
+/* Class = "UIButton"; normalTitle = "Terms of Service"; ObjectID = "Qyc-Fa-5Hv"; */
+"Qyc-Fa-5Hv.normalTitle" = "Conditions d'utilisations";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "ewv-Ib-Tdh"; */
+"ewv-Ib-Tdh.text" = "Date";
+
+/* Class = "UILabel"; text = "Setting name"; ObjectID = "hPv-k3-TJz"; */
+"hPv-k3-TJz.text" = "Choix d'un nom";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wdh-Ks-Xw9"; */
+"wdh-Ks-Xw9.text" = "Label";
+
+/* Class = "UILabel"; text = "Setting short description"; ObjectID = "wn1-sJ-CUb"; */
+"wn1-sJ-CUb.text" = "Choix d'une description";
+
+/* Class = "UILabel"; text = "Share and discover what’s happening around you through pictures"; ObjectID = "xuz-63-SBJ"; */
+"xuz-63-SBJ.text" = "Partagez et découvrez ce qui se passe autour de vous en images";
+
+/* Class = "UILabel"; text = "Write a message"; ObjectID = "zYS-F8-2Gl"; */
+"zYS-F8-2Gl.text" = "Ajoutez une légende";
