@@ -17,9 +17,8 @@ enum HTTPMethod : String {
 }
 
 class APIHandler {
-    static var baseURL : String! = "http://192.168.0.18:3000/"
-    // ONLY FOR MARCO'S TEST static var baseURL : String! = "https://snap-around.herokuapp.com/"
-    
+    // ONLY FOR MARCO'S LOCAL TESTS static var baseURL : String! = "http://192.168.0.18:3000/"
+    static var baseURL : String! = "https://snaparound-app.herokuapp.com/"
     
     static func sendRequest(method: HTTPMethod, endpoint: String, authentication:String!, queryParameters : Dictionary<String,String>?,
         completion: (json: AnyObject?, statusCode:Int?, error : NSError?) -> Void ) {
