@@ -242,12 +242,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CustomAnnotationVi
 //    }
 //    
     func didTapAnnotation() {
-        self.performSegueWithIdentifier("segue_collection", sender: "map")
+        self.performSegueWithIdentifier("segue_collection_squares", sender: "map")
     }
-    
-    
-    
-    
     
     @IBAction func clickedBackToMyPosition(sender: AnyObject) {
         //Mixpanel.sharedInstance().track("clicked back to my position")
@@ -288,11 +284,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, CustomAnnotationVi
     }
     
     
-        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            if segue.identifier == "segue_collection" {
-                if let _ = sender as? String {
-                    if let navigation = segue.destinationViewController as? UINavigationController {
-                        if let destinationVC = navigation.topViewController as? CollectionTableViewController{
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segue_collection" {
+            if let _ = sender as? String {
+                if let navigation = segue.destinationViewController as? UINavigationController {
+                    if let destinationVC = navigation.topViewController as?CollectionTableViewController{
                             destinationVC.isCollectionView = false
                             destinationVC.collectionPosts = posts.visible
                             //Mixpanel.sharedInstance().track("opened around me")
@@ -306,7 +302,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, CustomAnnotationVi
                         }
                     }
                 }
+            } else if segue.identifier == "segue_collection_squares" {
+                if let destinationVC = segue.destinationViewController as? PicturesCollectionViewController{
+                    destinationVC.collectionPosts = posts.visible
+                    //Mixpanel.sharedInstance().track("opened around me")
             }
         }
-    
+    }
 }

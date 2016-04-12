@@ -25,8 +25,6 @@ class CollectionTableViewCell: UITableViewCell, UIActionSheetDelegate {
     
     @IBOutlet weak var upvoteButton: UIButton!
     
-    
-    
     static let dateFormatter = NSDateFormatter()
     
     var post : Post!
@@ -73,8 +71,6 @@ class CollectionTableViewCell: UITableViewCell, UIActionSheetDelegate {
         let date = CollectionTableViewCell.dateFormatter.dateFromString(newDateString)
         self.date.text = RelativeTime.stringFromDate(date)
         self.msg.text = post.msg
-        
-        
         
         let url = NSURLRequest(URL: NSURL(string: post.pic)!)
         

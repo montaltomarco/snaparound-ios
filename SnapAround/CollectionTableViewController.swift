@@ -12,6 +12,7 @@ class CollectionTableViewController: UITableViewController, CollectionRemoveTabl
     
     var collectionPosts : Array<Post>! = []
     var isCollectionView = true
+    var pictureIndexToFocusOn: Int = -1
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var numberOfPhotos: UILabel!
@@ -55,6 +56,9 @@ class CollectionTableViewController: UITableViewController, CollectionRemoveTabl
             }
             self.numberOfPhotos.text = String(format: "%i photos", self.collectionPosts.count)
             self.tableView.reloadData()
+            if(self.pictureIndexToFocusOn != -1) {
+                self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: self.pictureIndexToFocusOn, inSection: 0), atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+            }
         }
         
         
@@ -73,6 +77,7 @@ class CollectionTableViewController: UITableViewController, CollectionRemoveTabl
     @IBAction func clickedBackButton(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
     // MARK: - Table view data source
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1 {
@@ -95,8 +100,6 @@ class CollectionTableViewController: UITableViewController, CollectionRemoveTabl
         } else {
             descriptionSize = 0
         }
-        
-        
         
         let imageSize : CGFloat = 40.0
         let topSpace : CGFloat = 8.0

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C3957BB1CBD69FA00F64606 /* PicturesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3957BA1CBD69FA00F64606 /* PicturesCollectionViewController.swift */; };
+		0CDF22A31CBD6B3C00E3B71C /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDF22A21CBD6B3C00E3B71C /* PictureCollectionViewCell.swift */; };
 		669B62EEBDEE7BB3623E9236 /* libPods-SnapAround.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76569359585C6C78B4939B7C /* libPods-SnapAround.a */; };
 		8A11987A1AFA0E0A00DE17F8 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1198791AFA0E0A00DE17F8 /* SettingCell.swift */; };
 		8A264D681AF2DA8D004A4D6D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A264D671AF2DA8D004A4D6D /* UIColorExtension.swift */; };
@@ -66,6 +68,8 @@
 /* Begin PBXFileReference section */
 		057128390A80EFDFEB2BE37A /* Pods-SnapAround.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapAround.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapAround/Pods-SnapAround.debug.xcconfig"; sourceTree = "<group>"; };
 		06DDE29F691B923DB2381778 /* Pods-SnapAround.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapAround.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapAround/Pods-SnapAround.release.xcconfig"; sourceTree = "<group>"; };
+		0C3957BA1CBD69FA00F64606 /* PicturesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesCollectionViewController.swift; sourceTree = "<group>"; };
+		0CDF22A21CBD6B3C00E3B71C /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
 		76569359585C6C78B4939B7C /* libPods-SnapAround.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SnapAround.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1198791AFA0E0A00DE17F8 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		8A264D671AF2DA8D004A4D6D /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 				8AB0B1701AFABE8500026368 /* RelativeTime.h */,
 				8AB0B1711AFABE8500026368 /* RelativeTime.m */,
 				91B7EBD21AEF674C008E6796 /* Supporting Files */,
+				0CDF22A21CBD6B3C00E3B71C /* PictureCollectionViewCell.swift */,
+				0C3957BA1CBD69FA00F64606 /* PicturesCollectionViewController.swift */,
 			);
 			path = SnapAround;
 			sourceTree = "<group>";
@@ -463,12 +469,14 @@
 				91C85C841AF7BFEB0089543F /* PostAggregate.swift in Sources */,
 				9159CCD71AF0CD8C00E5045A /* CollectionTableViewController.swift in Sources */,
 				91C85C821AF76B040089543F /* APIPosts.swift in Sources */,
+				0CDF22A31CBD6B3C00E3B71C /* PictureCollectionViewCell.swift in Sources */,
 				91C85C7E1AF761750089543F /* APIUsers.swift in Sources */,
 				915415A11B0E94F20073984A /* MineAnnotationView.swift in Sources */,
 				8AB0B1741AFAC4C500026368 /* StringExtension.swift in Sources */,
 				918C26841AF9100F00B3C946 /* FriendTableViewCell.swift in Sources */,
 				918C267C1AF8FFA700B3C946 /* ShareTableViewController.swift in Sources */,
 				918C26801AF90FFC00B3C946 /* ExpiresTableViewCell.swift in Sources */,
+				0C3957BB1CBD69FA00F64606 /* PicturesCollectionViewController.swift in Sources */,
 				9159CCD31AF0CD5700E5045A /* CameraViewController.swift in Sources */,
 				91ECC3CD1AF20F5200CBA17A /* NoAnimationSegue.swift in Sources */,
 				91C85C7B1AF7609D0089543F /* User.swift in Sources */,
