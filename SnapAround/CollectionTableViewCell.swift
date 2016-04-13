@@ -35,8 +35,8 @@ class CollectionTableViewCell: UITableViewCell, UIActionSheetDelegate {
         super.awakeFromNib()
         pic.clipsToBounds = true
         
-        let tap1 = UITapGestureRecognizer(target: self, action: Selector("tapImage"))
-        let tap2 = UITapGestureRecognizer(target: self, action: Selector("tapProfilePic"))
+        let tap1 = UITapGestureRecognizer(target: self, action: #selector(CollectionTableViewCell.tapImage))
+        let tap2 = UITapGestureRecognizer(target: self, action: #selector(CollectionTableViewCell.tapProfilePic))
         tap1.numberOfTapsRequired = 1
         tap2.numberOfTapsRequired = 1
         pic.userInteractionEnabled = true

@@ -26,7 +26,7 @@ class PicturesCollectionViewController: UIViewController, UICollectionViewDataSo
         self.picsCollectionView.userInteractionEnabled = true
         picsCollectionView.dataSource = self
         
-        let gesture = UITapGestureRecognizer(target: self, action: "closeView:")
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(PicturesCollectionViewController.closeView(_:)))
         self.picsNumberSubView.addGestureRecognizer(gesture)
     }
     
@@ -54,7 +54,7 @@ class PicturesCollectionViewController: UIViewController, UICollectionViewDataSo
         
         cell.tag = indexPath.row
         
-        let gesture = UITapGestureRecognizer(target: self, action: "detailPicture:")
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(PicturesCollectionViewController.detailPicture(_:)))
         cell.addGestureRecognizer(gesture)
         
         cell.updateCell(post)

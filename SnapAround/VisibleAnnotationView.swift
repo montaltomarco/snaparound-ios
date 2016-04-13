@@ -43,7 +43,7 @@ class VisibleAnnotationView: MKAnnotationView {
 //        self.layer.shadowRadius = 5;
 //        self.layer.shadowOpacity = 0.5;
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: Selector("didTapAnnotation"))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(VisibleAnnotationView.didTapAnnotation))
         self.addGestureRecognizer(tapGesture)
 
         

@@ -8,7 +8,7 @@
 //
 
 
-func snapLog(object : Any, file : NSString = __FILE__, line : Int = __LINE__ ) {
+func snapLog(object : Any, file : NSString = #file, line : Int = #line ) {
     //#if DEBUG
     let fileName = file.lastPathComponent
     print("<\(fileName):\(line) [\(NSDate())]> \(object)")

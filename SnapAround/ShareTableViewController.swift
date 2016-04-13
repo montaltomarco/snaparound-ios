@@ -26,9 +26,9 @@ class ShareTableViewController: UITableViewController, PublicTableViewCellDelega
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("hideKeyboard"))
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ShareTableViewController.hideKeyboard))
         self.tableView.addGestureRecognizer(gestureRecognizer);
-        let gestureRecognizer2 = UITapGestureRecognizer(target: self, action: Selector("hideKeyboard"))
+        let gestureRecognizer2 = UITapGestureRecognizer(target: self, action: #selector(ShareTableViewController.hideKeyboard))
         self.navigationController?.navigationBar.addGestureRecognizer(gestureRecognizer2)
         
         
@@ -239,7 +239,7 @@ class ShareTableViewController: UITableViewController, PublicTableViewCellDelega
     //--Notifications handler
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("didReceiveNotification:"), name: "SnapRemoteNotification", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ShareTableViewController.didReceiveNotification(_:)), name: "SnapRemoteNotification", object: nil)
     }
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)

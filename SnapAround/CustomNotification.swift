@@ -57,13 +57,13 @@ class CustomNotification: UIView {
         
         button = UIButton(frame: self.frame)
         self.addSubview(button)
-        button.addTarget(self, action: Selector("clicked"), forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(CustomNotification.clicked), forControlEvents: UIControlEvents.TouchUpInside)
     }
     func clicked(){
         let w = UIScreen.mainScreen().bounds
         self.frame = CGRectMake(0, -64, w.width, 64)
         
-        button.removeTarget(self, action: Selector("clicked"), forControlEvents: UIControlEvents.TouchUpInside)
+        button.removeTarget(self, action: #selector(CustomNotification.clicked), forControlEvents: UIControlEvents.TouchUpInside)
         VC?.dismissViewControllerAnimated(true, completion: { () -> Void in
             NSNotificationCenter.defaultCenter().postNotificationName("SnapRemoteNotification", object: nil, userInfo: self.userInfo)
         })
@@ -82,7 +82,7 @@ class CustomNotification: UIView {
             UIView.animateWithDuration(0.3, delay: 0, options: options, animations: { () -> Void in
                 self.frame = CGRectMake(0, 0, w.width, 64)
                 }, completion: { (completed) -> Void in
-                    let timer = NSTimer(timeInterval: 1.5, target: self, selector: Selector("timerEvent"), userInfo: nil, repeats: false)
+                    let timer = NSTimer(timeInterval: 1.5, target: self, selector: #selector(CustomNotification.timerEvent), userInfo: nil, repeats: false)
                     NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
             })
         }
