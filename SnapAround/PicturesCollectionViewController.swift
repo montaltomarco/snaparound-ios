@@ -55,8 +55,8 @@ class PicturesCollectionViewController: UIViewController, UICollectionViewDataSo
         cell.tag = indexPath.row
         
         let gesture = UITapGestureRecognizer(target: self, action: "detailPicture:")
-        cell.addGestureRecognizer(gesture)
         
+        cell.addGestureRecognizer(gesture)
         cell.updateCell(post)
         
         return cell
