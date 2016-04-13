@@ -16,5 +16,26 @@ func snapLog(object : Any, file : NSString = #file, line : Int = #line ) {
 }
 
 
+func addBlurArea(viewToBlur: UIView, opacity : CGFloat) {
+    if #available(iOS 8.0, *) {
+        if !UIAccessibilityIsReduceTransparencyEnabled() {
+            viewToBlur.backgroundColor = UIColor.clearColor()
+            
+            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            
+            blurEffectView.frame = viewToBlur.bounds
+            blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+            
+            let container = UIView(frame: viewToBlur.bounds)
+            container.alpha = opacity
+            container.addSubview(blurEffectView)
+            
+            viewToBlur.insertSubview(container, atIndex: 0)
+        }
+    }
+}
+
+
 let mixpanelToken = "2c4ac80c52646f7236ec05811f18f506"
 let urlTerms = "https://snaparound.herokuapp.com/#/terms"

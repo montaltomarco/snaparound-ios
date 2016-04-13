@@ -23,7 +23,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CustomAnnotationVi
         mapView.showsUserLocation = true
         
         locationHandler.startLocationTracker()
-
+        
+        addBlurArea(tabBarView, opacity: 0.9)
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)

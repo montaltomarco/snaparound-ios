@@ -28,8 +28,14 @@ class PicturesCollectionViewController: UIViewController, UICollectionViewDataSo
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(PicturesCollectionViewController.closeView(_:)))
         self.picsNumberSubView.addGestureRecognizer(gesture)
+        
+        
+
+        addBlurArea(view, opacity: 0.9)
     }
     
+
+
     override func viewDidLayoutSubviews() {
         
         setCollectionViewLayout()
