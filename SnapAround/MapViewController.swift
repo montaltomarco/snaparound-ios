@@ -24,7 +24,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CustomAnnotationVi
         
         locationHandler.startLocationTracker()
         
-        addBlurArea(tabBarView, opacity: 0.9)
+        //addBlurArea(tabBarView, opacity: 0.9)
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
