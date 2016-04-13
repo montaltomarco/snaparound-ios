@@ -8,11 +8,32 @@
 //
 
 
-func snapLog(object : Any, file : NSString = __FILE__, line : Int = __LINE__ ) {
+func snapLog(object : Any, file : NSString = #file, line : Int = #line ) {
     //#if DEBUG
     let fileName = file.lastPathComponent
     print("<\(fileName):\(line) [\(NSDate())]> \(object)")
     //#endif
+}
+
+
+func addBlurArea(viewToBlur: UIView, opacity : CGFloat) {
+    if #available(iOS 8.0, *) {
+        if !UIAccessibilityIsReduceTransparencyEnabled() {
+            viewToBlur.backgroundColor = UIColor.clearColor()
+            
+            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            
+            blurEffectView.frame = viewToBlur.bounds
+            blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+            
+            let container = UIView(frame: viewToBlur.bounds)
+            container.alpha = opacity
+            container.addSubview(blurEffectView)
+            
+            viewToBlur.insertSubview(container, atIndex: 0)
+        }
+    }
 }
 
 

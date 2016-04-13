@@ -204,7 +204,7 @@ class CollectionTableViewController: UITableViewController, CollectionRemoveTabl
     //--Notifications handler
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("didReceiveNotification:"), name: "SnapRemoteNotification", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(CollectionTableViewController.didReceiveNotification(_:)), name: "SnapRemoteNotification", object: nil)
     }
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)

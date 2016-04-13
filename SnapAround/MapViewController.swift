@@ -23,11 +23,12 @@ class MapViewController: UIViewController, MKMapViewDelegate, CustomAnnotationVi
         mapView.showsUserLocation = true
         
         locationHandler.startLocationTracker()
-
+        
+        //addBlurArea(tabBarView, opacity: 0.9)
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("didReceiveNotification:"), name: "SnapRemoteNotification", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MapViewController.didReceiveNotification(_:)), name: "SnapRemoteNotification", object: nil)
     }
     
     override func viewDidLayoutSubviews() {
@@ -61,13 +62,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CustomAnnotationVi
             return
         }
         
-        count++
+        count += 1
         let token = FBSDKAccessToken.currentAccessToken()
         if token != nil {
             UIApplication.sharedApplication().networkActivityIndicatorVisible = true
             APIPosts.getPosts(token.tokenString, lat: mapView.userLocation.location!.coordinate.latitude, lon: mapView.userLocation.location!.coordinate.longitude) { (posts, error) -> Void in
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-                self.count--
+                self.count -= 1
                 if let posts = posts {
                     self.posts = posts
                     completion(success: true)
@@ -76,7 +77,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CustomAnnotationVi
                 }
             }
         } else {
-            count--
+            count -= 1
             completion(success: false)
         }
     }
