@@ -62,7 +62,7 @@ class PicturesCollectionViewController: UIViewController, UICollectionViewDataSo
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(PicturesCollectionViewController.detailPicture(_:)))
         cell.addGestureRecognizer(gesture)
-        
+
         cell.updateCell(post)
         
         return cell
