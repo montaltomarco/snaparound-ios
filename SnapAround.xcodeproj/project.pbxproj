@@ -357,6 +357,7 @@
 				TargetAttributes = {
 					91B7EBCE1AEF674C008E6796 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KW7GEC6WHD;
 					};
 					91B7EBE31AEF674C008E6796 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -648,7 +649,7 @@
 				INFOPLIST_FILE = SnapAround/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = snap.SnapAround;
+				PRODUCT_BUNDLE_IDENTIFIER = Kitane.SnapAround;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SnapAround/Bridging-Header.h";
@@ -672,7 +673,7 @@
 				INFOPLIST_FILE = SnapAround/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = snap.SnapAround;
+				PRODUCT_BUNDLE_IDENTIFIER = Kitane.SnapAround;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SnapAround/Bridging-Header.h";
